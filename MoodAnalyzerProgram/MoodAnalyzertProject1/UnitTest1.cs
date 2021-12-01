@@ -8,26 +8,14 @@ namespace MoodAnalyzertProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void MsgSadMood()
+        public void NullMood()
         {
-            string msg = "I am in sad mood";
-            string expected = "SAD";
-
-            MoodAnalyzer mood = new MoodAnalyzer();
-
-            string actual = mood.AnalyseMood(msg);
-
-            Assert.AreEqual(expected, actual);
-        }
-
-        public void MsgHaapyMood()
-        {
-            string msg = "I am in Any mood";
+            string msg = " ";
             string expected = "HAPPY";
 
-            MoodAnalyzer mood = new MoodAnalyzer();
+            MoodAnalyzer mood = new MoodAnalyzer(msg);
 
-            string actual = mood.AnalyseMood(msg);
+            string actual = mood.AnalyseMood();
 
             Assert.AreEqual(expected, actual);
         }
