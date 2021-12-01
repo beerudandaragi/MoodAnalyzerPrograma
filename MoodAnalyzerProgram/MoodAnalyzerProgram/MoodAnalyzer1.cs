@@ -15,6 +15,11 @@ namespace MoodAnalyzer1
             this.msg = msg;
         }
 
+        public MoodAnalyzer()
+        {
+            this.msg = null;
+        }
+
         public string AnalyseMood()
         {
             try
